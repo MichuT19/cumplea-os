@@ -395,19 +395,6 @@ onUnmounted(() => {
     <!-- Ambient Cosmic Nebula Glow -->
     <div class="cosmic-aura-glow"></div>
 
-    <!-- Top Navigation Bar -->
-    <header class="galaxy-top-controls">
-      <button 
-        class="btn-cosmic-back" 
-        @click.stop="$emit('backToWish')"
-        title="Volver al Deseo"
-      >
-        <span>←</span> Volver
-      </button>
-
-      <div class="placeholder-top"></div>
-    </header>
-
     <!-- TITLE ABOVE THE HEART: FELIZ CUMPLEAÑOS -->
     <div 
       class="heart-center-text-anchor"
@@ -417,20 +404,6 @@ onUnmounted(() => {
         <span class="title-text">Feliz Cumpleaños</span>
       </h1>
     </div>
-
-    <!-- Bottom Action Controls -->
-    <footer class="galaxy-bottom-controls">
-
-      <button 
-        id="btn-soplar-pastel"
-        class="btn-open-letter-pill pulse-pill"
-        @click.stop="$emit('openCelebrationModal')"
-      >
-        <span class="btn-heart">♡</span>
-        <span class="btn-caption">Finalizar</span>
-        <span class="btn-heart">♡</span>
-      </button>
-    </footer>
   </div>
 </template>
 
@@ -573,15 +546,15 @@ onUnmounted(() => {
   text-shadow: 
     0 0 10px rgba(255, 255, 255, 0.9),
     0 0 25px rgba(255, 105, 180, 0.95),
-    0 0 50px rgba(255, 64, 129, 0.85),
-    0 0 85px rgba(225, 29, 72, 0.75);
+    0 0 50px rgba(255, 105, 180, 0.95),
+    0 0 85px rgba(255, 105, 180, 0.95);
 }
 
 .title-text {
-  background: linear-gradient(135deg, #ffffff 0%, #ffe4ec 45%, #ffd6e0 100%);
+  background: linear-gradient(100deg, #ffffff 0%, #ffffff 45%, #ffffff 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  filter: drop-shadow(0 0 20px rgba(255, 77, 121, 0.8));
+  filter: drop-shadow(0 0 20px rgba(255, 105, 180, 0.95));
 }
 
 .center-galaxy-caption {
